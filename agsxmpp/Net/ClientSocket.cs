@@ -64,6 +64,7 @@ namespace agsXMPP.Net
 #endif
         NetworkStream m_Stream;
         Stream m_NetworkStream = null;
+        SslProtocols m_SslProtocol = SslProtocols.Ssl3 | SslProtocols.Tls | SslProtocols.Tls11 | SslProtocols.Tls12;
 
 
         const int BUFFERSIZE = 1024;
@@ -284,15 +285,13 @@ namespace agsXMPP.Net
 		public override bool StartTls()
 		{
 			base.StartTls();
-			
-            SslProtocols protocol = SslProtocols.Tls;
-			return InitSSL(protocol);
+            return InitSSL(m_SslProtocol);
 		}           
 
 		
 		private bool InitSSL()
 		{
-            return InitSSL(SslProtocols.Default);
+            return InitSSL(m_SslProtocol);
 		}        
         
         /// <summary>
