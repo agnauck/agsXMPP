@@ -1,5 +1,5 @@
 # agsXMPP
-> agsXMPP is not in active in development since many years. It was replaced by its successors [MatriX](https://www.ag-software.net/matrix-xmpp-sdk/) and [MatriX vNext](https://www.ag-software.net/matrix-vnext/).
+> agsXMPP is not in active in development since many years. It was replaced by its successors [MatriX](https://www.ag-software.net/matrix-xmpp-sdk/) and [XmppDotNet](https://xmppdotnet.org/).
 
 agsXMPP is a SDK / library for the eXtensibleMessaging and Presence Protocol (XMPP) protocol 
 written in managed C# dedicated to .NET and Mono technologies. The SDK is released as 
